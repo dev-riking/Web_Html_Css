@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: rgb(96, 75, 0);
+            margin-bottom: 10%;
+        }
+
+        main {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .s1 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            top: 10%;
+            left: 1%;
+            bottom: 3%;
+        }
+
+        .s1 .q1 {
+            text-align: center;
+            font-size: 40px;
+            background-color: rgba(0, 115, 177, 0.732);
+            padding: 10px;
+            margin: 10px;
+            margin-top: 50px;
+            opacity: 0.8;
+            border-radius: 10px;
+            animation: luz 5s infinite;
+            box-sizing: border-box;
+            width: 400px;
+        }
+
+        .s1 .q1:hover {
+            background-color: rgb(0, 109, 168);
+            color: rgb(225, 195, 104);
+        }
+
+        #text-container {
+            position: absolute;
+            right: 2%;
+            top: 14%;
+            font-size: 20px;
+            width: 590px;
+            background-color: rgba(255, 255, 255, 0.711);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        #text-container:hover {
+            position: absolute;
+            right: 2%;
+            top: 14%;
+            font-size: 20px;
+            width: 590px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            display: none;
+            box-shadow: 1px 10px 100px #cdd006;
+
+        }
+
+        #img1 {
+            margin-top: 2%;
+            width: 700px;
+            margin-left: -12%;
+            height: auto;
+            animation: bounce 5s infinite;
+            position: fixed;
+        }
+
+        .image-preview {
+            display: none;
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 6px;
+        }
+
+        p {
+            margin-top: -40%;
+            font-size: 280%;
+            z-index: 10;
+            color: rgba(223, 189, 65, 0.894);
+        }
+
+        @media only screen and (max-width: 500px) {
+            p {
+                margin-top: -150%;
+            }
+
+            #img1 {
+                left: -8%;
+            }
+
+            .s1 {
+                left: 7%;
+            }
+
+            #text-container {
+                width: 70%;
+                font-size: 20px;
+                margin-top: 220%;
+                left: 10%;
+            }
+
+            #text-container:hover {
+                width: 70%;
+                font-size: 20px;
+                margin-top: 220%;
+                left: 10%;
+            }
+
+        }
+
+        @keyframes luz {
+            30% {
+                filter: drop-shadow(1px 1px 10px #d0b906);
+            }
+
+            90% {
+                filter: drop-shadow(1px 10px 100px #d0b906);
+            }
+        }
+
+        @keyframes bounce {
+
+            90% {
+                filter: drop-shadow(1px 10px 10px #d0b906);
+                transform: translateY(10px);
+            }
+
+            50% {
+                filter: drop-shadow(1px 10px 100px #d0b906);
+                transform: translateY(-60px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <p>RENASCENTISMO</p>
+        <img src="estatua-fotor-bg-remover-20240812203422.png" alt="Post Image 1" id="img1">
+        <section class="s1">
+            <div class="q1"
+                data-text="O Renascimento, que floresceu aproximadamente entre os séculos XIV e XVII, representou uma transição significativa da Idade Média para a modernidade na Europa. Originado na Itália, esse período foi impulsionado pelo declínio do sistema feudal e pelo crescimento das cidades-estado, que experimentaram uma nova prosperidade econômica. Com o desenvolvimento da banca e do comércio, essas cidades, como Florença e Veneza, tornaram-se centros de patrocínio para as artes e as ciências, criando um ambiente fértil para inovações culturais. Culturalmente, o Renascimento foi marcado por um renascimento do interesse pelas artes e conhecimentos da Antiguidade clássica. Artistas e pensadores buscaram inspiração na Grécia e Roma antigas, o que resultou em avanços significativos na arte e na arquitetura, como a aplicação de técnicas de perspectiva para criar representações mais realistas do mundo. Figuras como Leonardo da Vinci e Michelangelo contribuíram com obras-primas que exploravam o potencial humano e a beleza natural, refletindo o ideal de harmonização entre ciência, arte e filosofia. O período também foi caracterizado por importantes avanços científicos e literários, com pensadores como Nicolau Copérnico e Galileu Galilei desafiando as visões tradicionais do cosmos e promovendo métodos empíricos de investigação. A invenção da imprensa por Johannes Gutenberg facilitou a disseminação das novas ideias e contribuiu para a propagação dos ideais renascentistas. Paralelamente, o Renascimento coincidiu com movimentos religiosos significativos, como a Reforma Protestante e a Contrarreforma, que moldaram a prática religiosa e tiveram um impacto profundo na arte e na cultura da época."
+                data-src="arte1.jpg">Contexto Histórico e Cultural
+                <img src="arte1.jpg" class="image-preview" alt="Contexto Histórico e Cultural">
+            </div>
+            <div class="q1"
+                data-text="O humanismo foi uma das correntes mais influentes do Renascimento, moldando profundamente a cultura, a filosofia e a arte da época. Surgido no contexto da redescoberta dos textos clássicos da Antiguidade, o humanismo enfatizava o valor do estudo das obras de autores gregos e romanos e a promoção da dignidade e potencial do ser humano. Seus princípios centrais refletiam uma nova visão da relação entre o indivíduo e o mundo. Um dos principais princípios do humanismo era a centralidade do ser humano e suas capacidades intelectuais. Os humanistas acreditavam que a educação e o conhecimento poderiam aprimorar a natureza humana e promover uma vida virtuosa. Eles promoviam o estudo das humanidades — literatura, filosofia, história e linguística — como um meio para cultivar a virtude e a sabedoria. Esse enfoque se distanciava da visão teocêntrica predominante na Idade Média, que colocava Deus e a religião no centro de todas as questões, e passava a valorizar o potencial racional e criativo do indivíduo. Outra característica fundamental do humanismo foi a ênfase no estudo dos textos clássicos e na imitação das formas e ideias da Antiguidade. Humanistas como Petrarca e Erasmo de Roterdã buscaram reviver os ideais da Grécia e Roma antigas, acreditando que esses textos ofereciam insights valiosos sobre a natureza humana e a moralidade. O humanismo também promovia a ideia de que o conhecimento deveria ser acessível e aplicável à vida cotidiana, e não apenas reservado para o clero e os estudiosos. A prática da educação baseada nos modelos clássicos ajudou a formar uma nova visão sobre a relação entre conhecimento e sociedade, influenciando profundamente a cultura e as instituições da época."
+                data-src="arte2.jpg">Humanismo e Seus Princípios
+                <img src="arte2.jpg" class="image-preview" alt="Humanismo e Seus Princípios">
+            </div>
+            <div class="q1"
+                data-text="O Renascimento foi uma era de notáveis avanços artísticos e técnicos que revolucionaram a forma como a arte era criada e percebida. Este período foi marcado pela busca por realismo, precisão e expressão individual, e as inovações desenvolvidas nesse tempo estabeleceram os padrões para a arte ocidental nos séculos seguintes. Um dos avanços mais significativos foi a técnica da perspectiva linear, que permitiu aos artistas representar a profundidade e a tridimensionalidade em superfícies bidimensionais. Filippo Brunelleschi, um dos pioneiros nesse campo, foi fundamental no desenvolvimento desta técnica, que foi posteriormente aprimorada e popularizada por artistas como Leonardo da Vinci e Masaccio. A perspectiva linear transformou a forma como os espaços eram representados, permitindo uma maior precisão na construção de cenários e na composição de cenas. Outra inovação crucial foi o aprimoramento da representação do corpo humano. Os artistas renascentistas, inspirados pelos ideais da Antiguidade clássica, dedicaram-se ao estudo da anatomia para criar figuras mais realistas e proporcionais. Michelangelo, por exemplo, fez estudos detalhados da estrutura muscular e óssea, o que lhe permitiu esculpir figuras como o David com um nível de realismo sem precedentes. Além disso, técnicas de sombreamento, como o chiaroscuro (contraste entre luz e sombra), foram desenvolvidas para adicionar profundidade e volume às figuras, tornando-as mais vivas e expressivas. A inovação técnica também se estendeu aos materiais e métodos de pintura. O uso de óleo sobre tela, que se popularizou durante o Renascimento, permitiu uma maior flexibilidade e controle na aplicação das tintas, além de oferecer uma gama mais rica de cores e um acabamento mais detalhado. Artistas como Jan van Eyck foram pioneiros nessa técnica, que permitia maior detalhamento e maior durabilidade das obras. Esses avanços técnicos não só melhoraram a qualidade e o realismo das obras de arte, mas também ampliaram as possibilidades criativas e expressivas dos artistas, solidificando a influência duradoura do Renascimento na história da arte."
+                data-src="arte3.jpg">Avanços Artísticos e Técnicas
+                <img src="arte3.png" class="image-preview" alt="Avanços Artísticos e Técnicas">
+            </div>
+            <div class="q1"
+                data-text="Durante o Renascimento, a ciência e a tecnologia passaram por um período de grandes transformações e inovações que moldaram o desenvolvimento do pensamento científico e técnico na Europa. Esse período foi marcado por uma crescente ênfase na observação empírica e na experimentação, que desafiou as tradições medievais e pavimentou o caminho para a Revolução Científica. Um dos principais avanços científicos foi a revisão do modelo geocêntrico do universo, que colocava a Terra no centro do cosmos, em favor de uma visão heliocêntrica proposta por Nicolau Copérnico. Em sua obra De revolutionibus orbium coelestium (Sobre as Revoluções das Esferas Celestes), publicada em 1543, Copérnico argumentou que a Terra e os planetas giram em torno do Sol. Esta teoria foi fundamental para a mudança de paradigma que mais tarde seria aprofundada por Johannes Kepler e Galileu Galilei, cujas observações e cálculos refinaram o modelo heliocêntrico e estabeleceram as bases para a astronomia moderna. Outro avanço significativo foi no campo da anatomia, impulsionado pelo trabalho de Andreas Vesalius. Sua obra De humani corporis fabrica (Sobre a Estrutura do Corpo Humano), publicada em 1543, ofereceu uma descrição detalhada e precisa da anatomia humana, baseada em dissecações diretas. Vesalius desafiou muitas das crenças tradicionais sobre o corpo humano, promovendo um método de estudo mais empírico e baseado em observações diretas, em vez de depender apenas de textos antigos. Além disso, a invenção e a disseminação de novas tecnologias também tiveram um impacto profundo. A prensa de Gutenberg, inventada por Johannes Gutenberg na metade do século XV, revolucionou a produção e distribuição de livros, tornando o conhecimento mais acessível e permitindo uma maior difusão das ideias científicas e filosóficas. Essa invenção não só facilitou a circulação de textos científicos e técnicos, mas também acelerou o progresso intelectual e a comunicação entre os estudiosos. Essas inovações e mudanças no pensamento científico e tecnológico foram fundamentais para o desenvolvimento da ciência moderna, refletindo o espírito de curiosidade e a valorização da observação direta e da experimentação que caracterizaram o Renascimento. A combinação de novas descobertas e o aprimoramento das técnicas e ferramentas científicas ajudaram a estabelecer uma base sólida para o avanço da ciência nos séculos subsequentes."
+                data-src="arte4.jpg">Ciência e Inovações Tecnológicas
+                <img src="arte4.jpg" class="image-preview" alt="Ciência e Inovações Tecnológicas">
+            </div>
+            <div class="q1"
+                data-text="O impacto e o legado do Renascimento foram profundos e abrangentes, moldando significativamente a cultura, a ciência e a sociedade ocidental. Este período não apenas marcou uma transição importante da Idade Média para a modernidade, mas também estabeleceu as bases para muitos aspectos da vida intelectual e cultural que continuam a influenciar o mundo contemporâneo. O Renascimento trouxe uma nova visão sobre o potencial e a dignidade do ser humano, promovendo a ideia de que a educação e o conhecimento poderiam aprimorar a condição humana. Esse humanismo influenciou profundamente o desenvolvimento da arte e da literatura, destacando a capacidade do indivíduo para a criatividade e a autoexpressão. A ênfase na representação realista e na perspectiva nas artes visuais deixou um legado duradouro, com técnicas e estilos que ainda são estudados e admirados. Obras de mestres como Leonardo da Vinci, Michelangelo e Rafael continuam a ser referências fundamentais no estudo da arte. Na ciência, o Renascimento marcou o início de uma nova era de investigação empírica e pensamento crítico. A reavaliação do modelo cosmológico, com a proposta do heliocentrismo por Copérnico e as descobertas de Galileu, ajudaram a estabelecer as bases da ciência moderna. A valorização da observação direta e da experimentação promoveu o desenvolvimento do método científico, que se tornou a base para a pesquisa científica contemporânea. Essas mudanças não apenas alteraram a forma como entendemos o universo, mas também influenciaram profundamente o desenvolvimento das ciências naturais e a forma como a ciência é praticada. Além disso, a invenção da imprensa por Gutenberg revolucionou a disseminação do conhecimento, facilitando a reprodução e a circulação de ideias e textos. Isso teve um impacto duradouro na educação e na cultura, contribuindo para uma maior democratização do saber e para a formação de uma sociedade mais informada. O Renascimento também influenciou profundamente o pensamento político e filosófico, estabelecendo princípios que moldaram a teoria política e a ética na modernidade. Em resumo, o Renascimento foi um período de inovação e redescoberta que deixou um legado duradouro em múltiplas esferas da vida. Seu impacto é visível na arte, na ciência e na cultura, e suas ideias continuam a ressoar na forma como entendemos o mundo e a nós mesmos. O período não só redefiniu a maneira como o conhecimento é gerado e transmitido, mas também ajudou a formar o alicerce para muitos dos avanços que caracterizam a era moderna."
+                data-src="arte5.jpg">Impacto e Legado
+                <img src="arte5.jpg" class="image-preview" alt="Impacto e Legado">
+            </div>
+        </section>
+        <div id="text-container"></div>
+    </main>
+    <footer></footer>
+
+    <script>
+        document.querySelectorAll('.s1 .q1').forEach(item => {
+            item.addEventListener('click', () => {
+                const textContainer = document.getElementById('text-container');
+                const imagePreviews = document.querySelectorAll('.image-preview');
+
+                imagePreviews.forEach(img => {
+                    img.style.display = 'none';
+                });
+
+                textContainer.textContent = item.getAttribute('data-text');
+                textContainer.style.display = 'block';
+
+                const imagePreview = item.querySelector('.image-preview');
+                if (imagePreview) {
+                    imagePreview.style.display = 'block';
+                }
+            });
+        });
+
+        document.addEventListener('click', (event) => {
+            const textContainer = document.getElementById('text-container');
+            if (!textContainer.contains(event.target) && !event.target.classList.contains('q1')) {
+                textContainer.style.display = 'none';
+                // Oculta todas as imagens quando o texto é ocultado
+                document.querySelectorAll('.image-preview').forEach(img => {
+                    img.style.display = 'none';
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+header {
+    width: 3850px;
+    height: 100px;
+    background: linear-gradient(to left, #a800be, #6b6bc6);
+    color: rgb(0, 0, 0);
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #6b6bc6;
+    text-align: initial;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer img {
+    width: 35px;
+    height: 35px;
+    margin-left: 30px;
+}
+
+.quadrado {
+    width: 1400px;
+    height: 800px;
+    background: repeating-linear-gradient(#ffffff, #6b6bc6);
+    margin: 60px auto;
+    margin-top: 10%;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    box-shadow: 0px 15px 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+.conteudo-interno {
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.conteudo-interno p {
+    margin: 3px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.botao {
+    width: 100px;
+    height: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(1350%, 80%);
+
+}
+
+.botao p {
+    margin: -5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#interactive-button {
+    display: flex;
+    background-color: #6b6bc6;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    margin-left: -10%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+#interactive-button:hover {
+    display: flex;
+    background-color: #a800be;
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.5);
+}
+
+#interative-image{
+    display: flex;
+    font-size: 30px;
+    padding: 0%;
+    margin-left: -89%;
+    margin-top: 50%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.5);
+}
+#interative-image:hover {
+    display: flex;
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.5);
+}
+

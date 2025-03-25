@@ -1,0 +1,106 @@
+
+header {
+    background-color: #4caf50;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    z-index: 1000;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    display: inline;
+}
+
+header li a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+}
+
+header li a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+    padding-top: 170px;
+    padding-bottom: 170px; 
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+section.home {
+    background-color: #e0f2f1;
+}
+
+section.sobre {
+    background-color: #b2dfdb;
+}
+
+section.contato {
+    background-color: #80cbc4; 
+}
+
+form input, form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 160px;
+    height: 80px;
+}
+
+form button:hover {
+    background-color: #388e3c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    text-align: center; 
+    line-height: 1.6;
+    font-size: 40px;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}

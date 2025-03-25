@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      header {
+        background-color: rgb(0, 153, 255);
+        margin: 0px;
+        color: azure;
+        padding: 10px;
+        text-align: center;
+
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+      }
+
+      main {
+        margin-top: 180px;
+      }
+
+      .base {
+        border-radius: 10px;
+        border: 3px solid rgb(0, 0, 0);
+        padding: 50px;
+        height: 500px;
+        width: 600px;
+        box-sizing: border-box;
+        margin-left: 35%;
+        display: block;
+      }
+      .i {
+        border-radius: 10px;
+        border: 3px solid rgb(0, 0, 0);
+        width: 99%;
+        margin-top: 5%;
+        height: 7%;
+      }
+
+      .i:valid {
+        border-radius: 10px;
+        border: 3px solid rgb(2, 247, 71);
+        width: 99%;
+        margin-top: 5%;
+        height: 7%;
+      }
+
+      .i:invalid {
+        border-radius: 10px;
+        border: 3px solid rgb(247, 2, 2);
+        width: 99%;
+        margin-top: 5%;
+        height: 7%;
+      }
+
+      .p {
+        border-radius: 10px;
+        border: 3px solid rgb(0, 0, 0);
+        width: 99%;
+        margin-top: 5%;
+        height: 17%;
+        overflow: auto;
+      }
+
+      .p:valid {
+        border-radius: 10px;
+        border: 3px solid 3px solid rgb(2, 247, 71);
+        width: 99%;
+        margin-top: 5%;
+        height: 17%;
+        overflow: auto;
+      }
+
+      .p:invalid {
+        border-radius: 10px;
+        border: 3px solid 3px solid rgb(247, 2, 2);
+        width: 99%;
+        margin-top: 5%;
+        height: 17%;
+        overflow: auto;
+      }
+
+      .g{
+        border-radius: 10px;
+        border: 3px solid rgb(0, 0, 0);
+        width: 30%;
+        margin-top: 15%;
+        height: 10%;
+        background-color: rgb(0, 153, 255);
+        font-size: 100%;
+        color: black;
+      }
+
+      .g:hover{
+        border-radius: 10px;
+        width: 30%;
+        margin-top: 15%;
+        height: 10%;
+        background-color: rgb(0, 70, 116);
+        font-size: 100%;
+        color: black;
+      }
+
+      footer{
+        background-color: rgb(0, 153, 255);
+        margin: 0px;
+        color: azure;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        display: flex;
+      }
+
+      div{
+        display: block;
+        margin-left: 20%;
+        font-size: 20px;
+      }
+
+      div:hover {
+        display: block;
+        font-size: 30px;
+        text-shadow: 1px 1px 10px black;
+      }
+
+      body{
+        counter-reset: cin;
+      }
+
+      :is(main) :is(h3 ~ p){
+        color: brown;
+      }
+
+      :is(h3 ~ p)::before{
+        counter-increment: cin;
+        content: counter(cin);
+      }
+
+      
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Formulário de Contato</h1>
+    </header>
+    <main>
+      <form class="base">
+        <input class="i" type="text" placeholder="Seu Nome" required />
+        <input class="i" type="email" placeholder="Seu E-mail" required />
+        <textarea class="p" placeholder="Sua Mensagem" required></textarea>
+        <button class="g" type="submit">Enviar</button>
+      </form>
+    </main>
+    <footer>
+      <div>
+        <p>+55 123 456 789</p>
+      </div>
+      <div>
+        <p>contato@exemplo.com</p>
+      </div>
+      <div>
+        <p>Rua Exemplo, 123</p>
+      </div>
+    </footer>
+  </body>
+</html>

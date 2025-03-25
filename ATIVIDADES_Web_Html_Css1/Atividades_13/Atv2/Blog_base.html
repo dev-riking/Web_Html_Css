@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        header {
+            background: linear-gradient(to left, rgba(0, 166, 255, 0.681), rgba(8, 1, 1, 0.595));
+            margin: 0px;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+        }
+
+        main {
+            margin-top: 300px;
+            margin-bottom: 200%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .parte1 {
+            background-color: rgba(255, 255, 255, 0.659);
+            border-radius: 30px;
+            margin-right: 0px;
+        }
+
+        .parte1:hover {
+            background-color: rgba(173, 173, 173, 0.659);
+            border-radius: 30px;
+            margin-right: 0px;
+        }
+
+        #img1 {
+            background-color: rgb(255, 255, 255);
+            margin: 20px;
+            border-radius: 25px;
+            width: 96%;
+        }
+
+        #Titulo1 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+        }
+
+
+
+        .parte2 {
+            background-color: rgba(255, 255, 255, 0.67);
+            border-radius: 30px;
+            margin-right: 0px;
+            margin-top: 10px;
+            margin-bottom: -3%;
+            box-sizing: border-box;
+        }
+
+        .parte2:hover {
+            background-color: rgba(173, 173, 173, 0.659);
+            border-radius: 30px;
+            margin-right: 0px;
+        }
+
+        #img2 {
+            background-color: rgb(255, 255, 255);
+            margin: 20px;
+            border-radius: 25px;
+            width: 96%;
+            box-sizing: border-box;
+        }
+
+        #Titulo2 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+        }
+
+        .parag {
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .parag::after {
+            color: aliceblue;
+            text-shadow: 1px 1px 10px black;
+            content: ' Autor: Erik Bandeira.';
+        }
+
+        .parag::selection {
+            background-color: rgba(0, 166, 166, 0.432);
+            color: rgb(0, 44, 44);
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .cont {
+            margin-top: 5%;
+            box-shadow: 0px 0px 20px rgb(0, 187, 255);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding: 15px;
+            width: 1000px;
+            margin-left: 20%;
+            margin-right: 20%;
+            border-radius: 40px;
+            background: linear-gradient(to left, rgba(0, 166, 255, 0.681), rgba(8, 1, 1, 0.617));
+            display: block;
+
+        }
+
+        .feed {
+            text-align: center;
+            color: white;
+            padding: 10px;
+            margin-top: 100px;
+            width: 20%;
+            padding-bottom: 20px;
+            background: linear-gradient(to left, rgba(0, 166, 255, 0.681), rgba(0, 166, 255, 0.681));
+            margin-left: 20%;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        #t {
+            padding: 100px;
+            width: 69%;
+            margin-top: 3px;
+            margin-bottom: 100px;
+            border-radius: 10px;
+        }
+
+        #a {
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+
+        #a:hover {
+            padding: 10px;
+            background-color: rgb(0, 217, 255);
+            border-radius: 14px;
+        }
+
+        #a:active {
+            padding: 10px;
+            background-color: rgb(0, 217, 255);
+            border-radius: 10px;
+        }
+
+        footer {
+            background: linear-gradient(to left, rgb(36, 0, 134), rgb(8, 1, 1));
+            margin: 0px;
+            color: azure;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0%;
+            left: 0%;
+            width: 100%;
+        }
+
+        #v {
+            margin-top: -18%;
+            right: 0%;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SOBRE PROGRAMAÇÃO</h1>
+    </header>
+    <main>
+        <img id="v"
+            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ281bmo3aTZsNWdtNjcwb2ZxazRsZmhyY2dkcTBsbXYzOHJzOWZqZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ko7twHhomhk8E/giphy.webp"
+            alt="">
+        <article class="cont">
+            <section class="parte1">
+
+                <img src="https://qph.cf2.quoracdn.net/main-qimg-1cd8e652097912618433455320a755a5-lq" alt="Post Image 1"
+                    id="img1">
+                <h2 id="Titulo1">história do Assembly</h2>
+                <p class="parag">A linguagem Assembly surgiu na década de 1950 como uma alternativa mais legível ao
+                    código de máquina binário, facilitando a programação ao usar mnemônicos e símbolos para representar
+                    instruções de máquina. Cada versão de Assembly é específica para uma arquitetura de processador,
+                    permitindo que os programadores escrevam código de maneira mais compreensível do que com longas
+                    sequências de números binários. Assembly permite controle direto sobre o hardware, sendo utilizado
+                    para tarefas que exigem alta eficiência, como o desenvolvimento de sistemas operacionais e drivers.
+                    Embora seja de baixo nível, sua capacidade de otimização e controle direto mantém sua relevância até
+                    hoje.</p>
+            </section>
+            <section class="parte2">
+                <img src="https://content.invisioncic.com/u323382/monthly_2017_11/thumb.jpg.977e49122278f1406c6db1817b6c2ff3.jpg"
+                    alt="Post Image 2" id="img2">
+                <h2 id="Titulo2">Quem criou o Assembly?</h2>
+                <p class="parag">A linguagem Assembly não tem um único criador, pois surgiu de forma gradual com o
+                    desenvolvimento dos primeiros computadores. No entanto, a ideia de usar mnemônicos para representar
+                    instruções de máquina foi desenvolvida por vários pioneiros em computação na década de 1950.
+
+                    Um dos primeiros exemplos de linguagem Assembly foi criado para o computador UNIVAC I, desenvolvido
+                    por John Presper Eckert e J. W. Mauchly na década de 1950. Essas primeiras linguagens Assembly eram
+                    específicas para a arquitetura de cada computador e foram desenvolvidas por equipes de engenheiros e
+                    programadores que trabalhavam na criação de sistemas para esses primeiros computadores.
+
+                    Portanto, o Assembly foi um esforço coletivo de vários indivíduos e equipes, em vez de ter um único
+                    criador.
+                </p>
+            </section>
+        </article>
+        <article class="cont">
+            <section class="parte1">
+
+                <img src="https://media.licdn.com/dms/image/D4E12AQFA6PZAVSsxUg/article-cover_image-shrink_600_2000/0/1692266276722?e=2147483647&v=beta&t=-xluzu3xqj6x-9Jivwi5xZ0_TNVk1IC3W8ifVSYQW5k"
+                    alt="Post Image 1" id="img1">
+                <h2 id="Titulo1">história do Fortran</h2>
+                <p class="parag">O FORTRAN (Formula Translation) é uma das linguagens de programação mais antigas,
+                    desenvolvida na década de 1950 por uma equipe da IBM liderada por John Backus. Inicialmente criado
+                    para facilitar cálculos científicos e matemáticos, o FORTRAN permitiu aos cientistas e engenheiros
+                    escrever programas de maneira mais eficiente do que com código de máquina.
+
+                    Lançado em 1957, o FORTRAN evoluiu ao longo das décadas, passando por várias versões e melhorias. A
+                    linguagem passou a ter suporte a programação estruturada, modular e orientada a objetos, com as
+                    versões mais recentes como FORTRAN 77, 90, 95, 2003 e 2008.
+
+                    Apesar de ser uma linguagem antiga, o FORTRAN ainda é usado em áreas como computação científica e
+                    engenharia, devido à sua eficiência em processamento de números e arrays.</p>
+            </section>
+            <section class="parte2">
+                <img src="https://ufvinteligenciaartificial.com.br/wp-content/uploads/2022/05/Backus-fortran-founder.jpg"
+                    alt="Post Image 2" id="img2">
+                <h2 id="Titulo2">Quem criou o Fortran?</h2>
+                <p class="parag">O FORTRAN foi criado por uma equipe de desenvolvimento da IBM sob a liderança de John
+                    Backus. Backus, um matemático e cientista da computação, foi o responsável pela coordenação do
+                    projeto que resultou no desenvolvimento da linguagem FORTRAN. A equipe da IBM, conhecida como o "IBM
+                    Programming Research Group", incluiu outros colaboradores notáveis, mas Backus é frequentemente
+                    creditado como o principal arquiteto da linguagem. A primeira versão do FORTRAN foi lançada em 1957.
+                </p>
+            </section>
+        </article>
+        <article class="cont">
+            <section class="parte1">
+
+                <img src="https://facts.net/wp-content/uploads/2024/02/7-facts-you-must-know-about-lisp-1707389760.jpg"
+                    alt="Post Image 1" id="img1">
+                <h2 id="Titulo1">história do Lisp</h2>
+                <p class="parag">O LISP foi criado em 1958 por John McCarthy no MIT, com o objetivo de facilitar a
+                    manipulação de listas e o processamento simbólico, especialmente para pesquisa em inteligência
+                    artificial. A linguagem introduziu conceitos inovadores como a manipulação de listas como estrutura
+                    de dados principal e a avaliação de expressões, onde o código pode ser tratado e modificado como
+                    dados. Com o tempo, LISP evoluiu através de várias versões, incluindo o LISP 1.5 em 1962, e
+                    influenciou significativamente a programação e a pesquisa em IA devido à sua flexibilidade e
+                    capacidade de tratar código como dados.</p>
+            </section>
+            <section class="parte2">
+                <img src="https://cdn.masto.host/socialbrlinuxorg/media_attachments/files/112/283/071/950/752/372/original/df035ea60996d90c.jpg"
+                    alt="Post Image 2" id="img2">
+                <h2 id="Titulo2">Quem criou o Lisp?</h2>
+                <p class="parag">O LISP foi criado por John McCarthy em 1958. McCarthy, um cientista da computação do
+                    MIT, desenvolveu a linguagem como parte de suas pesquisas em inteligência artificial, visando
+                    facilitar o processamento simbólico e a manipulação de listas.</p>
+            </section>
+        </article>
+        <article class="cont">
+            <section class="parte1">
+
+                <img src="https://hermes.dio.me/articles/cover/67b90d7f-ab66-4110-a70d-effed40281f0.png"
+                    alt="Post Image 1" id="img1">
+                <h2 id="Titulo1">história do Java</h2>
+                <p class="parag">A história do Java começa no início dos anos 1990, quando a Sun Microsystems buscava
+                    uma linguagem de programação que pudesse ser utilizada em dispositivos eletrônicos de consumo. Em
+                    1991, James Gosling, Mike Sheridan e Patrick Naughton iniciaram um projeto chamado "The Green
+                    Project" com o objetivo de desenvolver uma linguagem que pudesse ser utilizada em eletrodomésticos,
+                    como televisores e set-top boxes.
+
+                    Gosling e sua equipe criaram uma linguagem chamada Oak, que mais tarde foi renomeada para Java. O
+                    nome "Java" foi escolhido por causa do café Java, que era popular entre os desenvolvedores da
+                    equipe.
+
+                    Em 1995, a Sun Microsystems lançou oficialmente o Java 1.0. Desde o início, o Java foi projetado com
+                    a portabilidade em mente, com o lema "Write Once, Run Anywhere" (Escreva uma vez, execute em
+                    qualquer lugar). Isso significava que programas Java poderiam ser executados em qualquer dispositivo
+                    que tivesse uma Máquina Virtual Java (JVM) instalada, independentemente do sistema operacional ou do
+                    hardware.
+
+                    Java rapidamente se tornou popular devido à sua capacidade de criar applets que poderiam ser
+                    executados em navegadores da web, adicionando interatividade às páginas web. Além disso, a robustez,
+                    a segurança e a facilidade de uso do Java contribuíram para sua adoção em diversas áreas, incluindo
+                    desenvolvimento de software corporativo, aplicações móveis (com a plataforma Java ME) e,
+                    posteriormente, no desenvolvimento de aplicativos Android.
+
+                    Ao longo dos anos, o Java passou por várias atualizações e melhorias. Em 2006, a Sun Microsystems
+                    tornou o Java de código aberto sob a licença GNU General Public License (GPL), o que aumentou ainda
+                    mais sua popularidade e adoção.
+
+                    Em 2010, a Oracle Corporation adquiriu a Sun Microsystems, assumindo o controle do Java e
+                    continuando a desenvolver a linguagem. Sob a gestão da Oracle, o Java continuou a evoluir, com
+                    versões como Java 8 (lançada em 2014), que introduziu importantes novos recursos como expressões
+                    lambda e a API de Streams, e Java 9 (lançada em 2017), que trouxe o sistema de módulos.
+
+                    Hoje, o Java é uma das linguagens de programação mais populares e amplamente utilizadas no mundo,
+                    sendo a base de uma vasta gama de aplicações, desde sistemas corporativos até aplicativos móveis e
+                    tecnologias de big data.</p>
+            </section>
+            <section class="parte2">
+                <img src="https://cdn-images-1.medium.com/max/640/0*4jhnlPktO9bc2r2L.jpg" alt="Post Image 2" id="img2">
+                <h2 id="Titulo2">Quem criou o Java?</h2>
+                <p class="parag">O Java foi criado por uma equipe de engenheiros da Sun Microsystems, liderada por James
+                    Gosling. James Gosling, frequentemente referido como o "pai do Java", teve um papel crucial no
+                    desenvolvimento da linguagem. A seguir, uma breve introdução sobre ele e sua equipe:
+
+                    James Gosling
+                    James Gosling, nascido em 1955 no Canadá, é um cientista da computação e engenheiro de software
+                    conhecido por seu trabalho na criação do Java. Ele obteve seu bacharelado em Ciência da Computação
+                    pela Universidade de Calgary e seu doutorado em Ciências da Computação pela Universidade Carnegie
+                    Mellon. Durante seu doutorado, Gosling trabalhou em vários projetos inovadores, incluindo o
+                    desenvolvimento de compiladores e sistemas de janelas.
+
+                    A Equipe "Green Project"
+                    Em 1991, James Gosling, junto com Mike Sheridan e Patrick Naughton, iniciou o "Green Project" na Sun
+                    Microsystems. O objetivo do projeto era desenvolver uma linguagem de programação que pudesse ser
+                    utilizada em dispositivos eletrônicos de consumo, como televisores e set-top boxes. A equipe
+                    original eventualmente expandiu para incluir outros membros talentosos, cada um contribuindo com
+                    suas próprias especialidades e experiências para o desenvolvimento da linguagem.
+
+                    Mike Sheridan: Contribuiu significativamente para a gestão e direção do projeto.
+                    Patrick Naughton: Trouxe sua experiência em desenvolvimento de software e contribuiu para a
+                    arquitetura da linguagem.
+                    O Desenvolvimento da Linguagem
+                    Inicialmente chamada de Oak, a linguagem foi renomeada para Java em 1995. A equipe enfrentou muitos
+                    desafios técnicos, mas sua visão clara de criar uma linguagem que fosse robusta, segura, portátil e
+                    de alto desempenho guiou suas decisões. James Gosling escreveu grande parte do compilador original e
+                    a Máquina Virtual Java (JVM), componentes críticos que permitiram que a linguagem alcançasse seu
+                    lema "Write Once, Run Anywhere".
+
+                    Legado e Impacto
+                    O trabalho de James Gosling e sua equipe revolucionou o desenvolvimento de software. O Java não
+                    apenas se tornou uma linguagem de programação amplamente adotada, mas também estabeleceu muitos dos
+                    princípios e práticas que ainda são fundamentais no desenvolvimento de software moderno. A visão e a
+                    execução técnica da equipe garantiram que o Java continuasse relevante e amplamente utilizado até
+                    hoje.
+
+                    James Gosling e a equipe do Green Project deixaram um legado duradouro na computação, influenciando
+                    muitas tecnologias subsequentes e inspirando gerações de desenvolvedores de software.</p>
+            </section>
+        </article>
+        <section class="feed">
+            <h3>Feedbacks</h3>
+            <a href="Feedback_base.html" target="_blank"><button id="a"> Clique aqui para deixar seu feedback!
+                </button></a>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; Blog 2024</p>
+    </footer>
+</body>
+
+</html>
